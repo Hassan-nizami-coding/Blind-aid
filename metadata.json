@@ -1,0 +1,5 @@
+{
+  "name": "Lumina",
+  "description": "Real-time spatial awareness and object detection for the blind.",
+  "requestFramePermissions": ["camera"]
+}
