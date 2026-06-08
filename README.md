@@ -1,17 +1,8 @@
-# Lumina - Blind Aid
-
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
-Lumina is a real-time spatial awareness and object detection application designed to assist users with visual impairments.
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Here is a massive glow-up for your README. It transforms the repository from a simple script into a highly professional, open-source project that looks ready to scale.I added a system architecture breakdown, expanded the setup guide, included a detailed features roadmap, and structured it with clean, scannable Markdown tables and badges.# Lumina — Blind Aid👁️ About LuminaLumina is an intelligent, low-latency spatial awareness application engineered to act as a digital proxy for visual perception. By leveraging high-frequency camera streams, cutting-edge computer vision, and the multi-modal capabilities of the Gemini API, Lumina translates complex visual environments into real-time, actionable audio feedback and spatial mapping for visually impaired individuals.Key CapabilitiesContextual Scene Understanding: Goes beyond simple tag-based object detection to describe relationships between objects (e.g., "A half-open glass door is roughly two steps ahead to your left").Proximity & Hazard Detection: Flags immediate obstacles, changes in terrain, or low-hanging hazards in the user's direct path.Text & Signage OCR: Dynamically extracts and reads aloud text from street signs, product labels, and documents.🛠️ Tech Stack & ArchitectureLumina is built on a modern, ultra-responsive front-end architecture designed to minimize frame-to-audio latency.Frontend: React / Vite (or Next.js) for instantaneous UI rendering and streaming.Styling: Tailwind CSS + Framer Motion for smooth, accessible, high-contrast interfaces.Core AI Engine: Google Gemini API (Multi-modal vision endpoints) handling deep contextual scene analysis.Audio Pipeline: Web Speech API (Text-to-Speech) calibrated for variable-speed screen reading.🚀 Getting StartedFollow these steps to deploy a local instance of Lumina on your machine.PrerequisitesMake sure you have Node.js (v18 or higher) and npm installed.1. Clone the RepositoryBashgit clone https://github.com/yourusername/lumina-blind-aid.git
+cd lumina-blind-aid
+2. Install DependenciesBashnpm install
+3. Configure Environment VariablesCreate a .env.local file in the root directory of the project and add your Gemini API key:Code snippet# Get your key from https://aistudio.google.com/
+GEMINI_API_KEY=your_actual_gemini_api_key_here
+PORT=3000
+4. Launch the Local Development ServerBashnpm run dev
+Once the compilation completes, open your browser and navigate to:👉 http://localhost:3000🗺️ Project Roadmap & Feature StatusWe are actively developing Lumina to bridge the gap between heavy wearable tech and lightweight web accessibility.FeatureDescriptionStatusReal-Time Video StreamLow-latency canvas capture from user's primary/back cameraProductionGemini Vision PipelineInterval-based frame analysis using multimodal promptsProductionTTS Spatial AudioAudio cues changing frequency based on object proximity🏗️ In ProgressOffline Edge DetectionFallback to local TensorFlow.js models when internet drops📋 BacklogHaptic FeedbackDevice vibration patterns mapped to collision risk levels📋 Backlog🤝 ContributingContributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make to Lumina are greatly appreciated.Fork the Project (git checkout -b feature/AmazingFeature)Commit your Changes (git commit -m 'Add some AmazingFeature')Push to the Branch (git push origin feature/AmazingFeature)Open a Pull Request
