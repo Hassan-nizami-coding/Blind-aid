@@ -70,3 +70,14 @@ git commit -m "Add some AmazingFeature"
 git push origin feature/AmazingFeature
 
 Then open a Pull Request.
+
+
+
+
+
+
+
+
+Example of object detection:
+<img width="640" height="357" alt="image" src="https://github.com/user-attachments/assets/f30eab73-5020-4f2c-a0fa-8f809fd33b55" />
+
